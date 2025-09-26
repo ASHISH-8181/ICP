@@ -1,0 +1,12 @@
+ sort on basis of starting interval
+store the first start point in prev arr
+intialise cnt with 1
+iterate in the array 
+mark the point as currStart-(point[i][0]) , currEnd-(points[i][1]), prevStart-(prev[0]),prevEnd-(prev[1])
+check for overlapping or not 
+if not --> (currstart<prevend) inc the count as we have burst the ballons and change the prev to curr--(point[i])
+if overlapping-->// overlap size
+prevstart=max(currstart,prevstart);
+prevend=min(currend,prevend);
+
+return cnt
