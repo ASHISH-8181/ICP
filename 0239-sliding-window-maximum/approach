@@ -1,0 +1,17 @@
+use deque as we wnat to acces from from front (max element) and delete from back;
+total window= n-k+1
+step 1 
+// check for window size ---> window size must be less than i-k 
+while(!deq.isEmpty() && deq.peekFirst()<=i-k ){
+                deq.pollFirst();
+// if the number that comes next is greater than the last element added than remove that element
+while(!deq.isEmpty() && nums[i]>=nums[deq.peekLast()]){
+                deq.pollLast();
+            }
+// add the current index in deque
+deq.offerLast(i);
+
+//when window size become equal to k store the maximum in arr that is at front of deque
+if(i>k-1){
+res[index]-nums[deq.peekFirst()];
+index++:
