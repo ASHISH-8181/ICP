@@ -1,0 +1,3 @@
+we have used binary search for this.
+ we created two function one for to search first element and other for last element .
+in first element function when our arr[mid]>=target end=mid-1 and in last when our arr[mid]<=target start=mid+1.
