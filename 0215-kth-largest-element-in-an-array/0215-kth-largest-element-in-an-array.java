@@ -1,5 +1,5 @@
 class Solution {
-    public int findKthLargest(int[] nums, int k) {
+    public int findKthLargest(int[] nums, int k) { // nlogk--> TRAVERSE+MINHEAP OF K SIZE
         // usig min-heap
         PriorityQueue<Integer> minHeap=new PriorityQueue<>();
         for(int i=0;i<nums.length;i++){
