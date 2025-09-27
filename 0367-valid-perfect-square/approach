@@ -1,0 +1,11 @@
+newton formula log logn
+x=(x+num/x)/2---> new nearest squareroot=(prevsqaureroot +square root of num to be determine divide by prevsquareroot)/2;
+iterate when calculate square root is less than num and find new square root
+and in last check if x*x == num 
+
+
+using binary search logn
+intialise start with zero and end with num(as square must lie in this range)
+simple binary search code --> calculate mid, check if mid*mid is eqaul to num then return true 
+otherwise check mid* mid is greater than num then change end to mid-1 and else change start to mid+1;
+ 
