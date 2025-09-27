@@ -1,0 +1,5 @@
+ we are using three pointer technique 
+place an i , j and k pointer at the last index of nums1 last element , nums2 last element and nums1 last point
+ place element till nums2 get empty 
+check which element is greater either num1's or nums2's and place it using k pointer.
+and in else place the remaining element using k pointer
