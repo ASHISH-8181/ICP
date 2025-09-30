@@ -1,0 +1,6 @@
+solve using sliding window 
+inc the size of window whenever a new character is there (!set.cotains(s.charAt(end))--> add character in set
+while inc store the length as length=max(length,end-start+1) --> inc end++;
+otherwise
+if character is already there then remove the first from set and dec window size;
+set.remove(s.charAt(first) first++;
